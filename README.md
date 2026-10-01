@@ -100,12 +100,12 @@ The frontend uses separate CSS files for individual pages and components to keep
 
 ### Dashboard
 
-![JobTrack Dashboard](jobtrack-frontend\screenshot\dashboard.png)
+![JobTrack Dashboard](screenshot/dashboard.png)
 
 ### Applications
 
-![JobTrack Applications](jobtrack-frontend\screenshot\Applications.png)
+![JobTrack Applications](screenshot/Applications.png)
 
 ### Interviews
 
-![JobTrack Interviews](jobtrack-frontend\screenshot\Interviews.png)
+![JobTrack Interviews](screenshot/Interviews.png)
