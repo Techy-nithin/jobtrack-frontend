@@ -1,16 +1,96 @@
-# React + Vite
+# JobTrack — Job Application & Interview Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+JobTrack is a modern React frontend for managing job applications and interview rounds in one place.
 
-Currently, two official plugins are available:
+It provides a clean dashboard where users can track applications, monitor interview rounds, update application details, and manage their job search.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- User registration and login
+- JWT-based authentication
+- Protected routes
+- Dashboard with application statistics
+- View all job applications
+- Search applications by company or job title
+- Filter applications by status
+- Add new job applications
+- Edit existing applications
+- Delete applications
+- View detailed application information
+- Manage interview rounds
+- Add, edit, and delete interviews
+- Track interview date and time
+- Track interview mode and status
+- Store interviewer information
+- Add interview feedback
+- Logout functionality
+- Responsive and modern UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+### Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React.js
+- JavaScript
+- React Router
+- Axios
+- HTML5
+- CSS3
+- Vite
+
+### Backend
+
+- Spring Boot
+- Spring Security
+- JWT
+- Spring Data JPA
+- MySQL
+
+### Tools
+
+- Visual Studio Code
+- Eclipse
+- Postman
+- Git
+- GitHub
+
+## Application Structure
+
+src
+│
+├── Components
+│ ├── Dashboard.jsx
+│ ├── Dashboard.css
+│ ├── Applications.jsx
+│ ├── Applications.css
+│ ├── AddApplication.jsx
+│ ├── AddApplication.css
+│ ├── EditApplication.jsx
+│ ├── ApplicationDetails.jsx
+│ ├── ApplicationDetails.css
+│ ├── Interviews.jsx
+│ ├── Interviews.css
+│ ├── Login.jsx
+│ ├── Register.jsx
+│ └── ProtectedRoute.jsx
+│
+├── services
+│ ├── api.js
+│ └── apiClient.js
+│
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+
+## Styling
+
+The frontend uses separate CSS files for individual pages and components to keep the styling organized and maintainable.
+
+- `Dashboard.css` — Dashboard styling
+- `Applications.css` — Applications list and search/filter UI
+- `AddApplication.css` — Add and Edit Application forms
+- `ApplicationDetails.css` — Application details page
+- `Interviews.css` — Interview management page
+- `App.css` — Shared application-level styles
+- `index.css` — Global styles
