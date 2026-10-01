@@ -95,3 +95,17 @@ The frontend uses separate CSS files for individual pages and components to keep
 - `Interviews.css` — Interview management page
 - `App.css` — Shared application-level styles
 - `index.css` — Global styles
+
+## Screenshots
+
+### Dashboard
+
+![JobTrack Dashboard](jobtrack-frontend\screenshot\dashboard.png)
+
+### Applications
+
+![JobTrack Applications](jobtrack-frontend\screenshot\Applications.png)
+
+### Interviews
+
+![JobTrack Interviews](jobtrack-frontend\screenshot\Interviews.png)
