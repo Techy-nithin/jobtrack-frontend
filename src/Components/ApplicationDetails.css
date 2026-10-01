@@ -1,0 +1,278 @@
+/* Application Details */
+
+.application-details-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f8fafc;
+}
+
+/* Header */
+
+.details-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.details-label {
+  margin: 0 0 8px;
+  color: #6366f1;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.details-header h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 32px;
+}
+
+.details-subtitle {
+  margin: 8px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.details-back-btn {
+  width: auto;
+  padding: 10px 16px;
+  background: white;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.details-back-btn:hover {
+  background: #f9fafb;
+}
+
+/* Main Card */
+
+.application-details-card {
+  max-width: 900px;
+  padding: 30px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+/* Company Header */
+
+.details-company-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.details-company-avatar {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 14px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.details-company-header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 24px;
+}
+
+.details-company-header p {
+  margin: 5px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Status */
+
+.details-status-row {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.application-details-card .status-badge {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Information */
+
+.details-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.details-info-item {
+  padding: 18px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.details-info-item span {
+  display: block;
+  margin-bottom: 7px;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.details-info-item strong {
+  color: #374151;
+  font-size: 14px;
+}
+
+/* Sections */
+
+.details-section {
+  margin-top: 28px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.details-section h3 {
+  margin: 0 0 14px;
+  color: #111827;
+  font-size: 16px;
+}
+
+/* Job URL */
+
+.job-url-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.job-url-btn:hover {
+  background: #e0e7ff;
+}
+
+.not-provided {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* Notes */
+
+.notes-box {
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 10px;
+}
+
+.notes-box p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Actions */
+
+.details-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.details-secondary-btn,
+.details-primary-btn {
+  width: auto;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.details-secondary-btn {
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.details-secondary-btn:hover {
+  background: #f9fafb;
+}
+
+.details-primary-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+}
+
+.details-primary-btn:hover {
+  background: #4338ca;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .application-details-page {
+    padding: 25px 18px;
+  }
+
+  .details-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .details-back-btn {
+    width: 100%;
+  }
+
+  .application-details-card {
+    padding: 22px;
+  }
+
+  .details-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .details-actions {
+    flex-direction: column;
+  }
+
+  .details-secondary-btn,
+  .details-primary-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-header h1 {
+    font-size: 27px;
+  }
+
+  .details-company-header h2 {
+    font-size: 21px;
+  }
+}

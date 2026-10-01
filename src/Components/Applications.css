@@ -1,0 +1,392 @@
+/* Applications Page */
+
+.applications-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f8fafc;
+}
+
+/* Header */
+
+.applications-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.applications-label {
+  margin: 0 0 8px;
+  color: #6366f1;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.applications-header h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 32px;
+}
+
+.applications-subtitle {
+  margin: 8px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.add-application-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 11px 18px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.add-application-btn:hover {
+  background: #4338ca;
+}
+
+/* Search and Filter */
+
+.applications-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.search-box {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+}
+
+.search-box span {
+  color: #9ca3af;
+  font-size: 22px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  outline: none;
+  color: #374151;
+  font-size: 14px;
+  background: transparent;
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
+
+.filter-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+}
+
+.filter-box span {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.filter-box select {
+  padding: 5px 8px;
+  border: none;
+  outline: none;
+  color: #374151;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Table Card */
+
+.applications-table-container {
+  margin-top: 22px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.table-header {
+  padding: 22px 25px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 18px;
+}
+
+.table-header p {
+  margin: 5px 0 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.applications-table th {
+  padding: 14px 20px;
+  background: #f8fafc;
+  color: #6b7280;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.applications-table td {
+  padding: 17px 20px;
+  border-top: 1px solid #f1f5f9;
+  color: #374151;
+  font-size: 13px;
+}
+
+.applications-table tbody tr {
+  transition: background 0.2s;
+}
+
+.applications-table tbody tr:hover {
+  background: #fafbff;
+}
+
+/* Company */
+
+.company-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-avatar {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.company-cell span {
+  color: #111827;
+  font-weight: 600;
+}
+
+.job-title {
+  color: #4b5563;
+}
+
+.date-cell {
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+/* Status */
+
+.applications-table .status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-badge.applied {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.status-badge.interview {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.status-badge.offered {
+  background: #fffbeb;
+  color: #b45309;
+}
+
+.status-badge.rejected {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+/* Actions */
+
+.application-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.table-action {
+    width: auto !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+  background: white;
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.view-action:hover {
+  background: #eef2ff;
+  color: #4f46e5;
+  border-color: #c7d2fe;
+}
+
+.edit-action:hover {
+  background: #f0fdf4;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+
+.interview-action:hover {
+  background: #eff6ff;
+  color: #2563eb;
+  border-color: #bfdbfe;
+}
+
+.delete-action {
+  color: #dc2626;
+}
+
+.delete-action:hover {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+/* Empty State */
+
+.no-applications {
+  padding: 0 !important;
+}
+
+.empty-applications {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.empty-app-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  color: #6366f1;
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+.empty-applications h3 {
+  margin: 0;
+  color: #111827;
+  font-size: 16px;
+}
+
+.empty-applications p {
+  margin: 7px 0 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .applications-page {
+    padding: 25px 18px;
+  }
+
+  .applications-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .add-application-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .applications-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    max-width: none;
+  }
+
+  .filter-box {
+    justify-content: space-between;
+  }
+
+  .filter-box select {
+    flex: 1;
+  }
+
+  .applications-table-container {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .applications-header h1 {
+    font-size: 27px;
+  }
+}
+
+.delete-action {
+  width: auto !important;
+  min-width: auto;
+}
