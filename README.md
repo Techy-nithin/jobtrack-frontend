@@ -54,34 +54,35 @@ It provides a clean dashboard where users can track applications, monitor interv
 - Git
 - GitHub
 
-## Application Structure
+### Application Structure
 
-src
+```text
+src/
+├── Components/
+│   ├── Dashboard.jsx
+│   ├── Dashboard.css
+│   ├── Applications.jsx
+│   ├── Applications.css
+│   ├── AddApplication.jsx
+│   ├── AddApplication.css
+│   ├── EditApplication.jsx
+│   ├── ApplicationDetails.jsx
+│   ├── ApplicationDetails.css
+│   ├── Interviews.jsx
+│   ├── Interviews.css
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   └── ProtectedRoute.jsx
 │
-├── Components
-│ ├── Dashboard.jsx
-│ ├── Dashboard.css
-│ ├── Applications.jsx
-│ ├── Applications.css
-│ ├── AddApplication.jsx
-│ ├── AddApplication.css
-│ ├── EditApplication.jsx
-│ ├── ApplicationDetails.jsx
-│ ├── ApplicationDetails.css
-│ ├── Interviews.jsx
-│ ├── Interviews.css
-│ ├── Login.jsx
-│ ├── Register.jsx
-│ └── ProtectedRoute.jsx
-│
-├── services
-│ ├── api.js
-│ └── apiClient.js
+├── services/
+│   ├── api.js
+│   └── apiClient.js
 │
 ├── App.jsx
 ├── App.css
 ├── index.css
 └── main.jsx
+```
 
 ## Styling
 
