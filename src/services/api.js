@@ -3,7 +3,7 @@ import apiClient from "./apiClient";
 
 export async function loginUser(email, password) {
   try {
-    const response = await axios.post("http://localhost:8080/api/auth/login", {
+    const response = await apiClient.post("/api/auth/login", {
       email: email,
       password: password,
     });
@@ -31,14 +31,11 @@ export async function testBackend() {
 
 export async function registerUser(name, email, password) {
   try {
-    const response = await axios.post(
-      "http://localhost:8080/api/auth/register",
-      {
-        name: name,
-        email: email,
-        password: password,
-      },
-    );
+    const response = await apiClient.post("/api/auth/register", {
+      name: name,
+      email: email,
+      password: password,
+    });
 
     return response.data;
   } catch (error) {
